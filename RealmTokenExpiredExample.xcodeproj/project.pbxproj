@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		070F16F82705EFCB0005AF0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070F16F62705EFCB0005AF0C /* Main.storyboard */; };
 		070F16FA2705EFCC0005AF0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070F16F92705EFCC0005AF0C /* Assets.xcassets */; };
 		070F16FD2705EFCC0005AF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070F16FB2705EFCC0005AF0C /* LaunchScreen.storyboard */; };
+		070F17052705F5150005AF0C /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F17042705F5150005AF0C /* Authentication.swift */; };
+		6930C3FF863BD84D4B7CBD7E /* Pods_RealmTokenExpiredExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E6DB3C4139110A1E6928D5 /* Pods_RealmTokenExpiredExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		070F16F92705EFCC0005AF0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		070F16FC2705EFCC0005AF0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		070F16FE2705EFCC0005AF0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		070F17042705F5150005AF0C /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		74E9FB0CC298EDEE7371FFE7 /* Pods-RealmTokenExpiredExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTokenExpiredExample.release.xcconfig"; path = "Target Support Files/Pods-RealmTokenExpiredExample/Pods-RealmTokenExpiredExample.release.xcconfig"; sourceTree = "<group>"; };
+		C8E6DB3C4139110A1E6928D5 /* Pods_RealmTokenExpiredExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTokenExpiredExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1ECD4AFA0E8B9E8FB9786C0 /* Pods-RealmTokenExpiredExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTokenExpiredExample.debug.xcconfig"; path = "Target Support Files/Pods-RealmTokenExpiredExample/Pods-RealmTokenExpiredExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6930C3FF863BD84D4B7CBD7E /* Pods_RealmTokenExpiredExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				070F16EF2705EFCB0005AF0C /* RealmTokenExpiredExample */,
 				070F16EE2705EFCB0005AF0C /* Products */,
+				57CEAA5AD92B0D8F0DF6841A /* Pods */,
+				7AD4F0ACF2555746C71CD1B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,30 @@
 				070F16F02705EFCB0005AF0C /* AppDelegate.swift */,
 				070F16F22705EFCB0005AF0C /* SceneDelegate.swift */,
 				070F16F42705EFCB0005AF0C /* ViewController.swift */,
+				070F17042705F5150005AF0C /* Authentication.swift */,
 				070F16F62705EFCB0005AF0C /* Main.storyboard */,
 				070F16F92705EFCC0005AF0C /* Assets.xcassets */,
 				070F16FB2705EFCC0005AF0C /* LaunchScreen.storyboard */,
 				070F16FE2705EFCC0005AF0C /* Info.plist */,
 			);
 			path = RealmTokenExpiredExample;
+			sourceTree = "<group>";
+		};
+		57CEAA5AD92B0D8F0DF6841A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1ECD4AFA0E8B9E8FB9786C0 /* Pods-RealmTokenExpiredExample.debug.xcconfig */,
+				74E9FB0CC298EDEE7371FFE7 /* Pods-RealmTokenExpiredExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7AD4F0ACF2555746C71CD1B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8E6DB3C4139110A1E6928D5 /* Pods_RealmTokenExpiredExample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 070F17012705EFCC0005AF0C /* Build configuration list for PBXNativeTarget "RealmTokenExpiredExample" */;
 			buildPhases = (
+				79A19E18E5E3F24864E3D88B /* [CP] Check Pods Manifest.lock */,
 				070F16E92705EFCB0005AF0C /* Sources */,
 				070F16EA2705EFCB0005AF0C /* Frameworks */,
 				070F16EB2705EFCB0005AF0C /* Resources */,
+				6DE61841781C84860722DFD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DE61841781C84860722DFD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmTokenExpiredExample/Pods-RealmTokenExpiredExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmTokenExpiredExample/Pods-RealmTokenExpiredExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealmTokenExpiredExample/Pods-RealmTokenExpiredExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79A19E18E5E3F24864E3D88B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmTokenExpiredExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		070F16E92705EFCB0005AF0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 				070F16F52705EFCB0005AF0C /* ViewController.swift in Sources */,
 				070F16F12705EFCB0005AF0C /* AppDelegate.swift in Sources */,
 				070F16F32705EFCB0005AF0C /* SceneDelegate.swift in Sources */,
+				070F17052705F5150005AF0C /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +355,14 @@
 		};
 		070F17022705EFCC0005AF0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1ECD4AFA0E8B9E8FB9786C0 /* Pods-RealmTokenExpiredExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXSB45R9AG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RealmTokenExpiredExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +376,14 @@
 		};
 		070F17032705EFCC0005AF0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E9FB0CC298EDEE7371FFE7 /* Pods-RealmTokenExpiredExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXSB45R9AG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RealmTokenExpiredExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
